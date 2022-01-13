@@ -3,7 +3,7 @@ status1="";
 objects=[];
 
 function preload(){
-img=loadSound("tense_alarm.mp3");
+//img=loadSound("tense_alarm.mp3");
 }
 
 
@@ -29,16 +29,16 @@ for(i=0;i<objects.length;i++){
     rect(objects[i].x,objects[i].y,objects[i].width,objects[i].height);
     if(objects[i].label=="person"){
         document.getElementById("number_of_objects").innerHTML="Baby is found !!!";
-        song.stop();
+      //  song.stop();
     }
     else{
         document.getElementById("number_of_objects").innerHTML="Baby is not  found :(";
-        song.play();
+       // song.play();
     }
 }
 if(objects.length==0){
     document.getElementById("number_of_objects").innerHTML="Baby is  not found :(";
-    song.play();
+   // song.play();
 }
 }
 
